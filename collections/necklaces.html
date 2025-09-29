@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Necklaces Collection - Ladies Collections | One-Gram Gold & Silver</title>
+  <meta name="description" content="Explore our stunning necklaces collection - temple jewelry, antique designs, one-gram gold & sterling silver. Premium necklaces in Bangalore at Ladies Collections.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <span>🚚 Free Shipping on Orders Above ₹499 | </span>
+    <a href="tel:+919448851731">📞 9448851731</a>
+    <span> | </span>
+    <a href="mailto:info@lcshop.in">✉️ info@lcshop.in</a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <a href="../index.html" class="logo">Ladies Collections</a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../collections.html" class="active">Collections</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../store.html">Store</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#search" title="Search"><i class="fas fa-search"></i></a>
+        <a href="#wishlist" title="Wishlist"><i class="far fa-heart"></i></a>
+        <a href="#cart" title="Cart"><i class="fas fa-shopping-bag"></i></a>
+        <a href="#account" title="Account"><i class="far fa-user"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <div class="breadcrumb-content">
+      <a href="../index.html">Home</a>
+      <span>></span>
+      <a href="../collections.html">Collections</a>
+      <span>></span>
+      <span>Necklaces</span>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background-image: linear-gradient(rgba(161, 6, 73, 0.6), rgba(161, 6, 73, 0.6)), url('https://images.unsplash.com/photo-1584208123944-cc93fd91fca1?auto=format&fit=crop&w=1350&q=80');">
+    <h1>Necklaces Collection</h1>
+  </section>
+
+  <!-- Category Description -->
+  <section class="content-section centered">
+    <h2>Elegant Necklaces for Every Occasion</h2>
+    <p>
+      Discover our exquisite collection of necklaces, ranging from delicate daily wear pieces to stunning statement jewelry. Each necklace is carefully selected for its beauty, quality, and craftsmanship.
+    </p>
+    <p>
+      From traditional temple designs to contemporary styles, our necklace collection celebrates the art of jewelry making with pieces that complement every neckline and occasion.
+    </p>
+  </section>
+
+  <!-- Product Categories -->
+  <section class="content-section">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+      <button class="filter-btn active" onclick="filterProducts('all')" style="border: none;">All Necklaces</button>
+      <button class="filter-btn" onclick="filterProducts('temple')" style="border: none;">Temple Jewelry</button>
+      <button class="filter-btn" onclick="filterProducts('antique')" style="border: none;">Antique Designs</button>
+      <button class="filter-btn" onclick="filterProducts('silver')" style="border: none;">Sterling Silver</button>
+      <button class="filter-btn" onclick="filterProducts('choker')" style="border: none;">Chokers</button>
+      <button class="filter-btn" onclick="filterProducts('long')" style="border: none;">Long Chains</button>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="content-section">
+    <div class="product-grid" id="product-grid">
+      <div class="product-card" data-category="temple">
+        <img src="https://images.unsplash.com/photo-1584208123944-cc93fd91fca1?auto=format&fit=crop&w=400&q=80" alt="Temple Necklace">
+        <div class="product-info">
+          <h3>Traditional Temple Necklace</h3>
+          <p>Intricate temple design with detailed craftsmanship. Perfect for festivals and special occasions.</p>
+          <div class="product-price">₹2,500</div>
+          <button class="btn" style="margin-top: 1rem; width: 100%;">View Details</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="antique">
+        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=400&q=80" alt="Antique Necklace">
+        <div class="product-info">
+          <h3>Antique Gold Finish Necklace</h3>
+          <p>Vintage-inspired design with rich gold finish. Timeless elegance for the modern woman.</p>
+          <div class="product-price">₹3,200</div>
+          <button class="btn" style="margin-top: 1rem; width: 100%;">View Details</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="silver">
+        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=400&q=80" alt="Silver Necklace">
+        <div class="product-info">
+          <h3>Sterling Silver Chain</h3>
+          <p>Pure 92.5 silver with contemporary design. Versatile piece for daily wear and special events.</p>
+          <div class="product-price">₹4,800</div>
+          <button class="btn" style="margin-top: 1rem; width: 100%;">View Details</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="choker">
+        <img src="https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=400&q=80" alt="Choker Necklace">
+        <div class="product-info">
+          <h3>Designer Choker Set</h3>
+          <p>Modern choker design with matching earrings. Perfect for contemporary styling.</p>
+          <div class="product-price">₹1,800</div>
+          <button class="btn" style="margin-top: 1rem; width: 100%;">View Details</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="long">
+        <img src="https://images.unsplash.com/photo-1617036980562-1c4a6f1a7984?auto=format&fit=crop&w=400&q=80" alt="Long Chain Necklace">
+        <div class="product-info">
+          <h3>Long Chain Necklace</h3>
+          <p>Elegant long chain perfect for layering. Adds sophistication to any outfit.</p>
+          <div class="product-price">₹2,200</div>
+          <button class="btn" style="margin-top: 1rem; width: 100%;">View Details</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="temple">
+        <img src="https://images.unsplash.com/photo-1598966733531-5d1b0d1c3c4b?auto=format&fit=crop&w=400&q=80" alt="Temple Design Necklace">
+        <div class="product-info">
+          <h3>Lakshmi Temple Necklace</h3>
+          <p>Beautiful Lakshmi design with traditional motifs. Brings prosperity and elegance.</p>
+          <div class="product-price">₹3,500</div>
+          <button class="btn" style="margin-top: 1rem; width: 100%;">View Details</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="antique">
+        <img src="https://images.unsplash.com/photo-1584208123944-cc93fd91fca1?auto=format&fit=crop&w=400&q=80" alt="Antique Pendant">
+        <div class="product-info">
+          <h3>Antique Pendant Set</h3>
+          <p>Heritage-inspired pendant with matching earrings. Celebrates traditional Indian artistry.</p>
+          <div class="product-price">₹2,800</div>
+          <button class="btn" style="margin-top: 1rem; width: 100%;">View Details</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="silver">
+        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=400&q=80" alt="Silver Pendant">
+        <div class="product-info">
+          <h3>Oxidized Silver Necklace</h3>
+          <p>Trendy oxidized silver with modern geometric patterns. Perfect for casual and formal wear.</p>
+          <div class="product-price">₹3,600</div>
+          <button class="btn" style="margin-top: 1rem; width: 100%;">View Details</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Our Necklaces -->
+  <section class="features">
+    <div class="features-container">
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3>Unique Designs</h3>
+        <p>Carefully curated collection featuring both traditional and contemporary necklace designs</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💎</div>
+        <h3>Premium Quality</h3>
+        <p>High-quality materials with excellent finishing that maintains beauty over time</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏷️</div>
+        <h3>Best Prices</h3>
+        <p>Competitive pricing on all necklaces without compromising on quality or design</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <h3>Easy Returns</h3>
+        <p>15-day return policy for complete satisfaction with your necklace purchase</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="content-section centered" style="background-color: #f8f6f6; padding: 4rem 2rem;">
+    <h2 style="color: #a10649;">Need Help Choosing?</h2>
+    <p style="margin-bottom: 2rem; color: #666;">Our jewelry experts are here to help you find the perfect necklace for your style and occasion.</p>
+    <div>
+      <a href="../contact.html" class="btn">Visit Our Store</a>
+      <a href="tel:+919448851731" class="btn btn-secondary" style="margin-left: 1rem;">Call for Consultation</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Collections</h3>
+        <ul>
+          <li><a href="necklaces.html">Necklaces</a></li>
+          <li><a href="earrings.html">Earrings</a></li>
+          <li><a href="bangles.html">Bangles & Bracelets</a></li>
+          <li><a href="rings.html">Rings</a></li>
+          <li><a href="silver.html">Sterling Silver</a></li>
+          <li><a href="bridal.html">Bridal Collection</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Customer Care</h3>
+        <ul>
+          <li><a href="../contact.html">Contact Us</a></li>
+          <li><a href="../shipping.html">Shipping & Delivery</a></li>
+          <li><a href="../returns.html">Returns & Exchange</a></li>
+          <li><a href="../size-guide.html">Size Guide</a></li>
+          <li><a href="../care.html">Jewelry Care</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <ul>
+          <li><a href="../about.html">Our Story</a></li>
+          <li><a href="../quality.html">Quality Promise</a></li>
+          <li><a href="../craftsmanship.html">Craftsmanship</a></li>
+          <li><a href="../testimonials.html">Customer Reviews</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <p style="margin-bottom: 1rem;">Stay updated with our latest collections and exclusive offers</p>
+        <div class="social-links">
+          <a href="https://facebook.com/ladiesCollectionsBangalore" title="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com/ladiesCollectionsBangalore" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://pinterest.com/ladiesCollectionsBangalore" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+          <a href="https://youtube.com/ladiesCollectionsBangalore" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Ladies Collections (LC Shop) - Premium Jewelry Store in Bangalore</p>
+      <p>All Rights Reserved | <a href="../privacy.html" style="color: #a10649;">Privacy Policy</a> | <a href="../terms.html" style="color: #a10649;">Terms of Service</a></p>
+      <p style="margin-top: 0.5rem;">Built with ❤️ in Bangalore | <a href="https://lcshop.in" style="color: #a10649;">lcshop.in</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    // Product filtering functionality
+    function filterProducts(category) {
+      const products = document.querySelectorAll('.product-card');
+      const buttons = document.querySelectorAll('.filter-btn');
+      
+      // Update active button
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      
+      // Filter products
+      products.forEach(product => {
+        if (category === 'all' || product.dataset.category === category) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    }
+  </script>
+  
+  <style>
+    .filter-btn {
+      padding: 0.8rem 1.5rem;
+      border: 2px solid #a10649;
+      background: white;
+      color: #a10649;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: #a10649;
+      color: white;
+    }
+  </style>
+</body>
+</html>
