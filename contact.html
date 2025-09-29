@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Ladies Collections | Visit Our Koramangala Store</title>
+  <meta name="description" content="Visit Ladies Collections jewelry store in Koramangala, Bangalore. Get directions, store hours, contact details. Call +91 9448851731 or email info@lcshop.in">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .contact-form {
+      background: white;
+      padding: 3rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      margin: 2rem 0;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #333;
+    }
+    
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 12px 15px;
+      border: 2px solid #f0f0f0;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+      font-family: 'Open Sans', sans-serif;
+    }
+    
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #a10649;
+    }
+    
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    
+    .store-hours {
+      background: #f8f6f6;
+      padding: 2rem;
+      border-radius: 10px;
+      margin: 2rem 0;
+    }
+    
+    .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .hours-table th,
+    .hours-table td {
+      padding: 0.8rem;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .hours-table th {
+      background-color: #a10649;
+      color: white;
+    }
+    
+    .hours-table tr:hover {
+      background-color: #f5f5f5;
+    }
+    
+    .contact-methods {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .contact-method {
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    
+    .contact-method:hover {
+      transform: translateY(-5px);
+    }
+    
+    .contact-method i {
+      font-size: 3rem;
+      color: #a10649;
+      margin-bottom: 1rem;
+    }
+    
+    .contact-method h3 {
+      color: #a10649;
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+    }
+    
+    .contact-method a {
+      color: #a10649;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    .map-container {
+      margin: 3rem 0;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    .map-placeholder {
+      background: linear-gradient(135deg, #a10649, #d63384);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    
+    @media (max-width: 768px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      
+      .contact-form {
+        padding: 2rem 1rem;
+      }
+      
+      .hours-table th,
+      .hours-table td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <span>🚚 Free Shipping on Orders Above ₹499 | </span>
+    <a href="tel:+919448851731">📞 9448851731</a>
+    <span> | </span>
+    <a href="mailto:info@lcshop.in">✉️ info@lcshop.in</a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="logo">Ladies Collections</a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="store.html">Store</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#search" title="Search"><i class="fas fa-search"></i></a>
+        <a href="#wishlist" title="Wishlist"><i class="far fa-heart"></i></a>
+        <a href="#cart" title="Cart"><i class="fas fa-shopping-bag"></i></a>
+        <a href="#account" title="Account"><i class="far fa-user"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <div class="breadcrumb-content">
+      <a href="index.html">Home</a>
+      <span>></span>
+      <span>Contact Us</span>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <h1>Contact Us</h1>
+  </section>
+
+  <!-- Contact Methods -->
+  <section class="content-section">
+    <div class="contact-methods">
+      <div class="contact-method">
+        <i class="fas fa-phone"></i>
+        <h3>Call Us</h3>
+        <p>Speak directly with our jewelry experts</p>
+        <p><a href="tel:+919448851731">+91 9448851731</a></p>
+        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">All Days: 10:30 AM - 9:00 PM</p>
+      </div>
+      
+      <div class="contact-method">
+        <i class="fab fa-whatsapp"></i>
+        <h3>WhatsApp</h3>
+        <p>Quick inquiries and instant responses</p>
+        <p><a href="https://wa.me/919448851731">Chat on WhatsApp</a></p>
+        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">Available during store hours</p>
+      </div>
+      
+      <div class="contact-method">
+        <i class="fas fa-envelope"></i>
+        <h3>Email Us</h3>
+        <p>Send us detailed inquiries</p>
+        <p><a href="mailto:info@lcshop.in">info@lcshop.in</a></p>
+        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">We reply within 24 hours</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Store Information -->
+  <section class="content-section">
+    <h2>Visit Our Store</h2>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;" class="store-info-grid">
+      <div>
+        <div class="contact-card">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Address:</strong><br>
+              #11, 60ft Road, 6th Block, Koramangala,<br>
+              Bangalore - 560095, Karnataka, India
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-directions"></i>
+            <div>
+              <strong>Landmarks:</strong><br>
+              Near Koramangala Water Tank<br>
+              Opposite Sony World Showroom
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-parking"></i>
+            <div>
+              <strong>Parking:</strong><br>
+              Free parking available in front of store
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-subway"></i>
+            <div>
+              <strong>Metro Access:</strong><br>
+              Koramangala Metro Station - 1.2 km<br>
+              (Purple Line)
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="store-hours">
+        <h3 style="color: #a10649; font-family: 'Playfair Display', serif; margin-bottom: 1rem;">Store Hours</h3>
+        <table class="hours-table">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>10:30 AM - 9:00 PM</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>10:30 AM - 9:00 PM</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>10:30 AM - 9:00 PM</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>10:30 AM - 9:00 PM</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>10:30 AM - 9:00 PM</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>10:30 AM - 9:00 PM</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>10:30 AM - 9:00 PM</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">
+          <i class="fas fa-info-circle"></i> 
+          Open all days of the week. Extended hours during festival seasons.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="content-section">
+    <h2>Find Us on Map</h2>
+    <div class="map-container">
+      <!-- You can replace this with actual Google Maps embed -->
+      <div class="map-placeholder">
+        <i class="fas fa-map-marker-alt" style="font-size: 3rem; margin-bottom: 1rem; display: block;"></i>
+        <h3>Ladies Collections</h3>
+        <p>#11, 60ft Road, 6th Block, Koramangala, Bangalore - 560095</p>
+        <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="https://maps.google.com/?q=Ladies+Collections,+11+60ft+Road+6th+Block+Koramangala+Bangalore+560095" 
+             target="_blank" 
+             style="color: white; text-decoration: none; background: rgba(255,255,255,0.2); padding: 0.8rem 1.5rem; border-radius: 25px; border: 1px solid white; transition: all 0.3s;"
+             rel="noopener noreferrer"
+             onmouseover="this.style.background='rgba(255,255,255,0.3)'"
+             onmouseout="this.style.background='rgba(255,255,255,0.2)'">
+            <i class="fas fa-directions"></i> Get Directions
+          </a>
+          <a href="https://maps.google.com/search/Ladies+Collections+Koramangala+Bangalore" 
+             target="_blank" 
+             style="color: white; text-decoration: none; background: rgba(255,255,255,0.2); padding: 0.8rem 1.5rem; border-radius: 25px; border: 1px solid white; transition: all 0.3s;"
+             rel="noopener noreferrer"
+             onmouseover="this.style.background='rgba(255,255,255,0.3)'"
+             onmouseout="this.style.background='rgba(255,255,255,0.2)'">
+            <i class="fas fa-map"></i> View on Map
+          </a>
+        </div>
+        <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8;">
+          Easily accessible from Koramangala Metro Station
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="content-section">
+    <h2>Send us a Message</h2>
+    <p style="text-align: center; margin-bottom: 2rem; color: #666;">
+      Have a question about our jewelry or need personalized assistance? We'd love to hear from you!
+    </p>
+    
+    <div class="contact-form">
+      <form id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="">Select a topic</option>
+              <option value="product-inquiry">Product Inquiry</option>
+              <option value="custom-order">Custom Order</option>
+              <option value="bridal-consultation">Bridal Consultation</option>
+              <option value="repair-service">Repair Service</option>
+              <option value="return-exchange">Return/Exchange</option>
+              <option value="general">General Question</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" placeholder="Tell us about your jewelry needs, preferred styles, budget range, or any specific questions..." required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label>
+            <input type="checkbox" required style="width: auto; margin-right: 0.5rem;">
+            I agree to receive communications from Ladies Collections regarding my inquiry
+          </label>
+        </div>
+        
+        <div style="text-align: center;">
+          <button type="submit" class="btn">Send Message</button>
+          <p style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
+            We typically respond within 24 hours during business days
+          </p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Additional Info -->
+  <section class="content-section" style="background-color: #f8f6f6; padding: 3rem 2rem;">
+    <h2>Why Visit Our Store?</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+      <div style="text-align: center;">
+        <i class="fas fa-gem" style="font-size: 2.5rem; color: #a10649; margin-bottom: 1rem;"></i>
+        <h4 style="color: #a10649; margin-bottom: 1rem;">Touch & Feel</h4>
+        <p>Experience the quality and craftsmanship of our jewelry firsthand</p>
+      </div>
+      <div style="text-align: center;">
+        <i class="fas fa-user-tie" style="font-size: 2.5rem; color: #a10649; margin-bottom: 1rem;"></i>
+        <h4 style="color: #a10649; margin-bottom: 1rem;">Expert Consultation</h4>
+        <p>Get personalized advice from our experienced jewelry specialists</p>
+      </div>
+      <div style="text-align: center;">
+        <i class="fas fa-palette" style="font-size: 2.5rem; color: #a10649; margin-bottom: 1rem;"></i>
+        <h4 style="color: #a10649; margin-bottom: 1rem;">Custom Design</h4>
+        <p>Discuss custom jewelry design options and see sample work</p>
+      </div>
+      <div style="text-align: center;">
+        <i class="fas fa-certificate" style="font-size: 2.5rem; color: #a10649; margin-bottom: 1rem;"></i>
+        <h4 style="color: #a10649; margin-bottom: 1rem;">Authentication</h4>
+        <p>Verify authenticity and get detailed information about each piece</p>
+      </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 3rem;">
+      <p style="font-size: 1.1rem; margin-bottom: 1rem; color: #666;">
+        <strong>Ready to visit us?</strong>
+      </p>
+      <a href="tel:+919448851731" class="btn">Call for Appointment</a>
+      <a href="collections.html" class="btn btn-secondary" style="margin-left: 1rem;">Browse Collections</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Collections</h3>
+        <ul>
+          <li><a href="collections/necklaces.html">Necklaces</a></li>
+          <li><a href="collections/earrings.html">Earrings</a></li>
+          <li><a href="collections/bangles.html">Bangles & Bracelets</a></li>
+          <li><a href="collections/rings.html">Rings</a></li>
+          <li><a href="collections/silver.html">Sterling Silver</a></li>
+          <li><a href="collections/bridal.html">Bridal Collection</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Customer Care</h3>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="shipping.html">Shipping & Delivery</a></li>
+          <li><a href="returns.html">Returns & Exchange</a></li>
+          <li><a href="size-guide.html">Size Guide</a></li>
+          <li><a href="care.html">Jewelry Care</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="quality.html">Quality Promise</a></li>
+          <li><a href="craftsmanship.html">Craftsmanship</a></li>
+          <li><a href="testimonials.html">Customer Reviews</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <p style="margin-bottom: 1rem;">Stay updated with our latest collections and exclusive offers</p>
+        <div class="social-links">
+          <a href="https://facebook.com/ladiesCollectionsBangalore" title="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com/lcshop.in" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://pinterest.com/ladiesCollectionsBangalore" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+          <a href="https://youtube.com/ladiesCollectionsBangalore" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Ladies Collections (LC Shop) - Premium Jewelry Store in Bangalore</p>
+      <p>All Rights Reserved | <a href="privacy.html" style="color: #a10649;">Privacy Policy</a> | <a href="terms.html" style="color: #a10649;">Terms of Service</a></p>
+      <p style="margin-top: 0.5rem;">Built with ❤️ in Bangalore | <a href="https://lcshop.in" style="color: #a10649;">lcshop.in</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <style>
+    @media (max-width: 768px) {
+      .store-info-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+      }
+    }
+  </style>
+</body>
+</html>

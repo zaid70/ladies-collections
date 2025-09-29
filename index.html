@@ -3,153 +3,310 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LC Shop — lcshop.in</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Open Sans', sans-serif;
-      background-color: #fff7f9;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #f5c6d6;
-      text-align: center;
-      padding: 1.5rem 1rem;
-    }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.2rem;
-      color: #a10649;
-    }
-    nav {
-      margin-top: 0.5rem;
-    }
-    nav a {
-      margin: 0 8px;
-      text-decoration: none;
-      color: #a10649;
-      font-weight: 600;
-    }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1600181951231-8f6b0b5e6e8c?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
-      height: 60vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-      font-size: 1.8rem;
-      font-family: 'Playfair Display', serif;
-      padding: 1rem;
-      text-align: center;
-    }
-    section {
-      padding: 2rem 1rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    .about {
-      text-align: center;
-    }
-    .about h2 {
-      color: #a10649;
-      margin-bottom: 1rem;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-    .contact-card {
-      background: #fff;
-      border: 1px solid #f0d6df;
-      padding: 1rem;
-      border-radius: 8px;
-      display: inline-block;
-      margin-top: 1rem;
-      text-align: left;
-    }
-    footer {
-      background-color: #a10649;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-    footer a {
-      color: #ffd8e2;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.6rem; }
-      .hero { height: 40vh; font-size: 1.2rem; }
-    }
-  </style>
+  <title>Ladies Collections - Premium Jewelry Store in Bangalore | LC Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Ladies Collections</h1>
-    <p>One-Gram • Antique • Silver Jewellery</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#collections">Collections</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <div class="hero">
-    Discover timeless beauty in every piece ✨
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <span>🚚 Free Shipping on Orders Above ₹499 | </span>
+    <a href="tel:+919448851731">📞 9448851731</a>
+    <span> | </span>
+    <a href="mailto:info@lcshop.in">✉️ info@lcshop.in</a>
   </div>
 
-  <section id="about" class="about">
-    <h2>About Us</h2>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <a href="#" class="logo">Ladies Collections</a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="store.html">Store</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#search" title="Search"><i class="fas fa-search"></i></a>
+        <a href="#wishlist" title="Wishlist"><i class="far fa-heart"></i></a>
+        <a href="#cart" title="Cart"><i class="fas fa-shopping-bag"></i></a>
+        <a href="#account" title="Account"><i class="far fa-user"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-carousel">
+    <div class="carousel-container">
+      <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1350&q=80');">
+        <div class="hero-content">
+          <h1>Exquisite Jewelry Collection</h1>
+          <p>Discover timeless beauty in our curated selection of one-gram gold, antique, and sterling silver jewelry. Each piece crafted to celebrate your unique style.</p>
+          <div style="margin-top: 2rem;">
+            <a href="collections.html" class="btn">Shop Now</a>
+            <a href="about.html" class="btn btn-outline" style="margin-left: 1rem;">Learn More</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1584208123944-cc93fd91fca1?auto=format&fit=crop&w=1350&q=80');">
+        <div class="hero-content">
+          <h1>Traditional Temple Jewelry</h1>
+          <p>Celebrate India's rich heritage with our authentic temple jewelry collection. Each piece tells a story of tradition, craftsmanship, and timeless beauty.</p>
+          <div style="margin-top: 2rem;">
+            <a href="collections.html" class="btn">Explore Temple Collection</a>
+            <a href="about.html" class="btn btn-outline" style="margin-left: 1rem;">Our Heritage</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1350&q=80');">
+        <div class="hero-content">
+          <h1>Premium Sterling Silver</h1>
+          <p>Experience luxury with our 92.5 sterling silver collection. Contemporary designs that blend modern elegance with exceptional quality and lasting beauty.</p>
+          <div style="margin-top: 2rem;">
+            <a href="collections.html" class="btn">View Silver Collection</a>
+            <a href="contact.html" class="btn btn-outline" style="margin-left: 1rem;">Visit Store</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Carousel Navigation -->
+      <div class="carousel-nav">
+        <button class="carousel-prev" onclick="changeSlide(-1)">‹</button>
+        <button class="carousel-next" onclick="changeSlide(1)">›</button>
+      </div>
+      
+      <!-- Carousel Dots -->
+      <div class="carousel-dots">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="features-container">
+      <div class="feature-card">
+        <div class="feature-icon">🚚</div>
+        <h3>Free Shipping</h3>
+        <p>Complimentary shipping on all orders above ₹499 across India</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <h3>15-Day Returns</h3>
+        <p>Easy returns and exchanges within 15 days of purchase</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏆</div>
+        <h3>20+ Years Legacy</h3>
+        <p>Two decades of trust and excellence in jewelry craftsmanship</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💎</div>
+        <h3>Premium Collection</h3>
+        <p>Handpicked designs from traditional to contemporary styles</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Categories -->
+  <section id="collections" class="categories">
+    <h2 class="section-title">Our Exclusive Collections</h2>
+    <div class="categories-grid">
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1584208123944-cc93fd91fca1?auto=format&fit=crop&w=800&q=80" alt="Necklaces Collection">
+        <div class="category-overlay">
+          <h3>Necklaces</h3>
+          <p>Elegant statement pieces for every occasion</p>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1598966733531-5d1b0d1c3c4b?auto=format&fit=crop&w=800&q=80" alt="Earrings Collection">
+        <div class="category-overlay">
+          <h3>Earrings</h3>
+          <p>From studs to chandeliers - find your perfect pair</p>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1617036980562-1c4a6f1a7984?auto=format&fit=crop&w=800&q=80" alt="Bangles Collection">
+        <div class="category-overlay">
+          <h3>Bangles & Bracelets</h3>
+          <p>Traditional and modern designs to adorn your wrists</p>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80" alt="Silver Collection">
+        <div class="category-overlay">
+          <h3>Sterling Silver</h3>
+          <p>Pure 92.5 silver jewelry with contemporary appeal</p>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80" alt="Rings Collection">
+        <div class="category-overlay">
+          <h3>Rings</h3>
+          <p>Beautiful rings for engagements and celebrations</p>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80" alt="Bridal Collection">
+        <div class="category-overlay">
+          <h3>Bridal Collection</h3>
+          <p>Exquisite pieces for your special day</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Section -->
+  <section class="trust">
+    <div class="trust-container">
+      <div class="trust-item">
+        <h3>50,000+</h3>
+        <p>Happy Customers</p>
+      </div>
+      <div class="trust-item">
+        <h3>20+ Years</h3>
+        <p>Legacy of Excellence</p>
+      </div>
+      <div class="trust-item">
+        <h3>Premium Quality</h3>
+        <p>Handpicked Collection</p>
+      </div>
+      <div class="trust-item">
+        <h3>1000+</h3>
+        <p>Unique Designs</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="content-section centered">
+    <h2>About Ladies Collections</h2>
     <p>
-      Located in the heart of <strong>Koramangala, Bangalore</strong>, LC Shop (Ladies Collections)
-      brings you a curated range of elegant <strong>one-gram, antique, and silver jewellery</strong>.
-      Each piece is handpicked to add grace and tradition to every occasion.
+      Established in the heart of <strong>Koramangala, Bangalore</strong>, Ladies Collections (LC Shop) has been a trusted name in premium jewelry for over two decades. We specialize in exquisite <strong>one-gram gold, antique, and sterling silver jewelry</strong> that celebrates the beauty and tradition of Indian craftsmanship.
+    </p>
+    <p>
+      Our curated collection features handpicked designs ranging from traditional temple jewelry to contemporary pieces, ensuring every woman finds something that resonates with her personal style. With over 20 years of expertise, each piece in our collection undergoes rigorous quality checks to ensure exceptional craftsmanship.
+    </p>
+    <p>
+      At Ladies Collections, we believe jewelry is not just an accessory but an expression of your personality and cherished memories. Visit our store to experience the finest in jewelry craftsmanship.
     </p>
   </section>
 
-  <section id="collections">
-    <h2 style="text-align:center;color:#a10649;">Our Collections</h2>
-    <div class="gallery">
-      <img src="https://images.unsplash.com/photo-1584208123944-cc93fd91fca1?auto=format&fit=crop&w=800&q=80" alt="Antique Necklace">
-      <img src="https://images.unsplash.com/photo-1598966733531-5d1b0d1c3c4b?auto=format&fit=crop&w=800&q=80" alt="Silver Earrings">
-      <img src="https://images.unsplash.com/photo-1617036980562-1c4a6f1a7984?auto=format&fit=crop&w=800&q=80" alt="Bangle Set">
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-container">
+      <h2 class="section-title">Visit Our Store</h2>
+      <p style="font-size: 1.1rem; color: #666; margin-bottom: 1rem;">Experience our collection in person at our Koramangala showroom</p>
+      
+      <div class="contact-card">
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <strong>Phone:</strong> <a href="tel:+919448851731">+91 9448851731</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <strong>Email:</strong> <a href="mailto:info@lcshop.in">info@lcshop.in</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <strong>Address:</strong><br>
+            #11, 60ft Road, 6th Block, Koramangala,<br>
+            Bangalore - 560095, Karnataka
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-clock"></i>
+          <div>
+            <strong>Store Hours:</strong><br>
+            Monday - Saturday: 10:30 AM - 8:00 PM<br>
+            Sunday: Closed
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-whatsapp"></i>
+          <div>
+            <strong>WhatsApp:</strong> <a href="https://wa.me/919448851731">Chat with us</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="contact" style="text-align:center;">
-    <h2 style="color:#a10649;">Contact Us</h2>
-
-    <div class="contact-card">
-      <p style="margin-bottom:6px;"><strong>Phone:</strong> <a href="tel:+919448851731">9448851731</a></p>
-      <p style="margin-bottom:6px;"><strong>Address:</strong><br>
-      #11, 60ft Road, 6th Block, Koramangala,<br>
-      Bangalore — 560095</p>
-      <p style="margin-bottom:6px;"><strong>Email:</strong> <a href="mailto:info@lcshop.in">info@lcshop.in</a></p>
-      <p style="font-size:0.9rem; color:#666; margin-top:8px;">Open: Mon — Sat, 10:30 AM — 8:00 PM</p>
-    </div>
-
-  </section>
-
+  <!-- Footer -->
   <footer>
-    © 2025 LC Shop | Ladies Collections — Built with ❤️ in Bangalore<br/>
-    <a href="https://lcshop.in">lcshop.in</a>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Collections</h3>
+        <ul>
+          <li><a href="#necklaces">Necklaces</a></li>
+          <li><a href="#earrings">Earrings</a></li>
+          <li><a href="#bangles">Bangles & Bracelets</a></li>
+          <li><a href="#rings">Rings</a></li>
+          <li><a href="#silver">Sterling Silver</a></li>
+          <li><a href="#bridal">Bridal Collection</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Customer Care</h3>
+        <ul>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#shipping">Shipping & Delivery</a></li>
+          <li><a href="#returns">Returns & Exchange</a></li>
+          <li><a href="#size-guide">Size Guide</a></li>
+          <li><a href="#care">Jewelry Care</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <ul>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#quality">Quality Promise</a></li>
+          <li><a href="#craftsmanship">Craftsmanship</a></li>
+          <li><a href="#testimonials">Customer Reviews</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#careers">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <p style="margin-bottom: 1rem;">Stay updated with our latest collections and exclusive offers</p>
+        <div class="social-links">
+          <a href="https://facebook.com/ladiesCollectionsBangalore" title="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com/ladiesCollectionsBangalore" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://pinterest.com/ladiesCollectionsBangalore" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+          <a href="https://youtube.com/ladiesCollectionsBangalore" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">
+          <strong>Newsletter:</strong><br>
+          Subscribe for exclusive offers and new arrivals
+        </p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Ladies Collections (LC Shop) - Premium Jewelry Store in Bangalore</p>
+      <p>All Rights Reserved | <a href="#privacy" style="color: #a10649;">Privacy Policy</a> | <a href="#terms" style="color: #a10649;">Terms of Service</a></p>
+      <p style="margin-top: 0.5rem;">Built with ❤️ by Zaid | <a href="https://lcshop.in" style="color: #a10649;">lcshop.in</a></p>
+    </div>
   </footer>
+
+  <script src="js/main.js"></script>
 
 </body>
 </html>

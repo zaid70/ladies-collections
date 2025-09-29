@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jewelry Collections - Ladies Collections | Premium One-Gram Gold, Silver & Antique</title>
+  <meta name="description" content="Explore our exquisite jewelry collections - necklaces, earrings, bangles, rings, sterling silver & bridal sets. Premium one-gram gold and antique designs in Bangalore.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .collection-hero {
+      background: linear-gradient(rgba(161, 6, 73, 0.5), rgba(161, 6, 73, 0.5)), 
+                  url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1350&q=80') center/cover;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    
+    .filter-section {
+      background-color: #f8f6f6;
+      padding: 2rem;
+      text-align: center;
+    }
+    
+    .filter-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    
+    .filter-btn {
+      padding: 0.8rem 1.5rem;
+      border: 2px solid #a10649;
+      background: white;
+      color: #a10649;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: #a10649;
+      color: white;
+    }
+    
+    .featured-collections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 3rem;
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .featured-card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      position: relative;
+    }
+    
+    .featured-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .featured-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    
+    .featured-content {
+      padding: 2rem;
+    }
+    
+    .featured-content h3 {
+      font-family: 'Playfair Display', serif;
+      color: #a10649;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    
+    .featured-content p {
+      color: #666;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    
+    .featured-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: #a10649;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    
+    .price-range {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #f0f0f0;
+    }
+    
+    .price-range span {
+      font-weight: 600;
+      color: #a10649;
+    }
+    
+    .specialty-sections {
+      background: linear-gradient(135deg, #a10649, #d63384);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    
+    .specialty-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 2rem auto 0;
+    }
+    
+    .specialty-item {
+      background: rgba(255,255,255,0.1);
+      padding: 2rem;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+    }
+    
+    .specialty-item i {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    
+    .trending-section {
+      padding: 4rem 2rem;
+      background-color: #fdfbfb;
+    }
+    
+    .trending-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 2rem auto 0;
+    }
+    
+    .trending-item {
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      height: 250px;
+      transition: transform 0.3s;
+    }
+    
+    .trending-item:hover {
+      transform: scale(1.05);
+    }
+    
+    .trending-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .trending-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.8));
+      color: white;
+      padding: 2rem;
+    }
+    
+    .trending-overlay h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .call-to-action {
+      background: #f8f6f6;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    
+    @media (max-width: 768px) {
+      .collection-hero {
+        height: 40vh;
+      }
+      
+      .filter-buttons {
+        gap: 0.5rem;
+      }
+      
+      .filter-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+      }
+      
+      .featured-collections {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+        gap: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <span>🚚 Free Shipping on Orders Above ₹499 | </span>
+    <a href="tel:+919448851731">📞 9448851731</a>
+    <span> | </span>
+    <a href="mailto:info@lcshop.in">✉️ info@lcshop.in</a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="logo">Ladies Collections</a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collections.html" class="active">Collections</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="store.html">Store</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#search" title="Search"><i class="fas fa-search"></i></a>
+        <a href="#wishlist" title="Wishlist"><i class="far fa-heart"></i></a>
+        <a href="#cart" title="Cart"><i class="fas fa-shopping-bag"></i></a>
+        <a href="#account" title="Account"><i class="far fa-user"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <div class="breadcrumb-content">
+      <a href="index.html">Home</a>
+      <span>></span>
+      <span>Collections</span>
+    </div>
+  </div>
+
+  <!-- Collection Hero -->
+  <section class="collection-hero">
+    <div>
+      <h1 style="font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 1rem;">Our Collections</h1>
+      <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Discover timeless elegance in every piece - from traditional temple jewelry to contemporary designs</p>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="filter-section">
+    <h2 style="color: #a10649; font-family: 'Playfair Display', serif; margin-bottom: 1rem;">Shop by Category</h2>
+    <p style="color: #666; margin-bottom: 1rem;">Explore our curated collections designed for every occasion</p>
+    <div class="filter-buttons">
+      <a href="#all" class="filter-btn active">All Collections</a>
+      <a href="collections/necklaces.html" class="filter-btn">Necklaces</a>
+      <a href="collections/earrings.html" class="filter-btn">Earrings</a>
+      <a href="collections/bangles.html" class="filter-btn">Bangles</a>
+      <a href="collections/rings.html" class="filter-btn">Rings</a>
+      <a href="collections/silver.html" class="filter-btn">Sterling Silver</a>
+      <a href="collections/bridal.html" class="filter-btn">Bridal</a>
+    </div>
+  </section>
+
+  <!-- Featured Collections -->
+  <section class="featured-collections">
+    <div class="featured-card">
+      <div class="featured-badge">Popular</div>
+      <img src="https://images.unsplash.com/photo-1584208123944-cc93fd91fca1?auto=format&fit=crop&w=800&q=80" alt="Necklaces Collection">
+      <div class="featured-content">
+        <h3>Necklaces</h3>
+        <p>From delicate chains to statement pieces, our necklace collection offers elegance for every neckline. Features traditional temple designs and contemporary styles.</p>
+        <div class="price-range">
+          <span>Starting from ₹1,200</span>
+          <a href="collections/necklaces.html" class="btn">Explore →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="featured-card">
+      <div class="featured-badge">New Arrival</div>
+      <img src="https://images.unsplash.com/photo-1598966733531-5d1b0d1c3c4b?auto=format&fit=crop&w=800&q=80" alt="Earrings Collection">
+      <div class="featured-content">
+        <h3>Earrings</h3>
+        <p>Discover our stunning range of earrings - from subtle studs to dramatic chandeliers. Perfect for daily wear and special occasions.</p>
+        <div class="price-range">
+          <span>Starting from ₹800</span>
+          <a href="collections/earrings.html" class="btn">Explore →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="featured-card">
+      <div class="featured-badge">Bestseller</div>
+      <img src="https://images.unsplash.com/photo-1617036980562-1c4a6f1a7984?auto=format&fit=crop&w=800&q=80" alt="Bangles Collection">
+      <div class="featured-content">
+        <h3>Bangles & Bracelets</h3>
+        <p>Adorn your wrists with our beautiful collection of bangles and bracelets. Traditional designs meet modern elegance in these stunning pieces.</p>
+        <div class="price-range">
+          <span>Starting from ₹600</span>
+          <a href="collections/bangles.html" class="btn">Explore →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="featured-card">
+      <div class="featured-badge">Premium</div>
+      <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80" alt="Sterling Silver Collection">
+      <div class="featured-content">
+        <h3>Sterling Silver</h3>
+        <p>Pure 92.5 silver jewelry with contemporary appeal. Each piece is crafted with precision and finished to perfection for lasting beauty.</p>
+        <div class="price-range">
+          <span>Starting from ₹2,000</span>
+          <a href="collections/silver.html" class="btn">Explore →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="featured-card">
+      <div class="featured-badge">Elegant</div>
+      <img src="https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=800&q=80" alt="Rings Collection">
+      <div class="featured-content">
+        <h3>Rings</h3>
+        <p>Find the perfect ring for every finger and every occasion. From delicate bands to statement cocktail rings, we have something special.</p>
+        <div class="price-range">
+          <span>Starting from ₹900</span>
+          <a href="collections/rings.html" class="btn">Explore →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="featured-card">
+      <div class="featured-badge">Exclusive</div>
+      <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80" alt="Bridal Collection">
+      <div class="featured-content">
+        <h3>Bridal Collection</h3>
+        <p>Make your special day even more memorable with our exclusive bridal jewelry. Intricate designs that celebrate love and new beginnings.</p>
+        <div class="price-range">
+          <span>Starting from ₹5,000</span>
+          <a href="collections/bridal.html" class="btn">Explore →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialty Sections -->
+  <section class="specialty-sections">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem;">Our Specialties</h2>
+    <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.9;">What makes Ladies Collections unique</p>
+    
+    <div class="specialty-grid">
+      <div class="specialty-item">
+        <i class="fas fa-star"></i>
+        <h3>One-Gram Gold</h3>
+        <p>Affordable luxury with the look and feel of real gold. Perfect for daily wear and special occasions.</p>
+      </div>
+      <div class="specialty-item">
+        <i class="fas fa-gem"></i>
+        <h3>Antique Designs</h3>
+        <p>Traditional craftsmanship meets timeless beauty in our curated antique jewelry collection.</p>
+      </div>
+      <div class="specialty-item">
+        <i class="fas fa-certificate"></i>
+        <h3>Quality Assured</h3>
+        <p>Every piece undergoes strict quality checks. 20+ years of expertise ensures premium craftsmanship.</p>
+      </div>
+      <div class="specialty-item">
+        <i class="fas fa-palette"></i>
+        <h3>Custom Designs</h3>
+        <p>Create your unique piece with our custom design service. Bring your vision to life.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending Now -->
+  <section class="trending-section">
+    <div class="content-section">
+      <h2 class="section-title">Trending Now</h2>
+      <p style="text-align: center; color: #666; margin-bottom: 2rem;">Discover what's popular this season</p>
+      
+      <div class="trending-grid">
+        <div class="trending-item">
+          <img src="https://images.unsplash.com/photo-1584208123944-cc93fd91fca1?auto=format&fit=crop&w=400&q=80" alt="Temple Jewelry">
+          <div class="trending-overlay">
+            <h4>Temple Jewelry</h4>
+            <p>Traditional South Indian designs</p>
+          </div>
+        </div>
+        <div class="trending-item">
+          <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=400&q=80" alt="Oxidized Silver">
+          <div class="trending-overlay">
+            <h4>Oxidized Silver</h4>
+            <p>Contemporary bohemian styles</p>
+          </div>
+        </div>
+        <div class="trending-item">
+          <img src="https://images.unsplash.com/photo-1617036980562-1c4a6f1a7984?auto=format&fit=crop&w=400&q=80" alt="Layered Necklaces">
+          <div class="trending-overlay">
+            <h4>Layered Sets</h4>
+            <p>Mix and match combinations</p>
+          </div>
+        </div>
+        <div class="trending-item">
+          <img src="https://images.unsplash.com/photo-1598966733531-5d1b0d1c3c4b?auto=format&fit=crop&w=400&q=80" alt="Statement Earrings">
+          <div class="trending-overlay">
+            <h4>Statement Earrings</h4>
+            <p>Bold and beautiful designs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="call-to-action">
+    <div class="content-section">
+      <h2 style="color: #a10649; font-family: 'Playfair Display', serif; margin-bottom: 1rem;">Can't Find What You're Looking For?</h2>
+      <p style="font-size: 1.1rem; color: #666; margin-bottom: 2rem;">We offer custom jewelry design services to create your perfect piece</p>
+      <div>
+        <a href="contact.html" class="btn">Contact for Custom Design</a>
+        <a href="tel:+919448851731" class="btn btn-secondary" style="margin-left: 1rem;">Call Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Section -->
+  <section class="trust">
+    <div class="trust-container">
+      <div class="trust-item">
+        <h3>50,000+</h3>
+        <p>Happy Customers</p>
+      </div>
+      <div class="trust-item">
+        <h3>20+ Years</h3>
+        <p>Legacy of Excellence</p>
+      </div>
+      <div class="trust-item">
+        <h3>Premium Quality</h3>
+        <p>Handpicked Collection</p>
+      </div>
+      <div class="trust-item">
+        <h3>1000+</h3>
+        <p>Unique Designs</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Collections</h3>
+        <ul>
+          <li><a href="collections/necklaces.html">Necklaces</a></li>
+          <li><a href="collections/earrings.html">Earrings</a></li>
+          <li><a href="collections/bangles.html">Bangles & Bracelets</a></li>
+          <li><a href="collections/rings.html">Rings</a></li>
+          <li><a href="collections/silver.html">Sterling Silver</a></li>
+          <li><a href="collections/bridal.html">Bridal Collection</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Customer Care</h3>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="shipping.html">Shipping & Delivery</a></li>
+          <li><a href="returns.html">Returns & Exchange</a></li>
+          <li><a href="size-guide.html">Size Guide</a></li>
+          <li><a href="care.html">Jewelry Care</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="quality.html">Quality Promise</a></li>
+          <li><a href="craftsmanship.html">Craftsmanship</a></li>
+          <li><a href="testimonials.html">Customer Reviews</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <p style="margin-bottom: 1rem;">Stay updated with our latest collections and exclusive offers</p>
+        <div class="social-links">
+          <a href="https://facebook.com/ladiesCollectionsBangalore" title="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com/ladiesCollectionsBangalore" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://pinterest.com/ladiesCollectionsBangalore" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+          <a href="https://youtube.com/ladiesCollectionsBangalore" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Ladies Collections (LC Shop) - Premium Jewelry Store in Bangalore</p>
+      <p>All Rights Reserved | <a href="privacy.html" style="color: #a10649;">Privacy Policy</a> | <a href="terms.html" style="color: #a10649;">Terms of Service</a></p>
+      <p style="margin-top: 0.5rem;">Built with ❤️ in Bangalore | <a href="https://lcshop.in" style="color: #a10649;">lcshop.in</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
